@@ -7,9 +7,9 @@ const app = express();
 
 // Configurar CORS para permitir solicitudes desde cualquier origen (o especificar un dominio si prefieres)
 app.use(cors({
-  origin: 'https://polargentino.github.io/form-backend/', // Cambia '*' a tu dominio frontend si es necesario, por ejemplo: 'https://tu-dominio-frontend.com'
-}));
-
+    origin: 'https://polargentino.github.io', // Permite solo solicitudes desde tu frontend
+  }));
+  
 app.use(express.json());
 
 // Conexión a MongoDB
